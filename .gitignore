@@ -1,0 +1,4 @@
+# Ignore dataset and large files
+saved_svos/Raw_SVO
+*.svo
+*.svo2

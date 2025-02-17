@@ -1,0 +1,112 @@
+{
+    "dataset_name": "Human POV Manipulation Dataset",
+    "version": "1.0.0",
+    "description": "This dataset contains first-person perspective videos and sensor data of human hand manipulation tasks. Data is captured using a head-mounted ZED stereo camera that provides synchronized RGB, depth, and motion information. It is ideal for research in learning-based robotics manipulation, imitation learning, and vision-based control.",
+    "contact": {
+      "name": "Archer Lin",
+      "email": "lin1524@purdue.edu",
+      "institution": "Purdue University"
+    },
+    "citation": "If you use this dataset in your work, please cite: [ Citation Placeholder ].",
+    "license": "CC BY 4.0",
+    "data_format": "Each recorded session is stored in a dedicated subfolder that contains separate folders and files for RGB images, depth maps, video, and synchronized sensor data.",
+    "data_structure": {
+      "data": {
+        "description": "A folder representing a recorded manipulation task session.",
+        "naming_convention": "{date}_{task_name}_{data_id}",
+        "contents": {
+          "rgb_left": {
+            "description": "Folder containing RGB keyframe images from the left camera of the ZED stereo camera.",
+            "image_name_template": "{sequence_id}_{timestamp}.{file_type}",
+            "file_type": "png",
+            "resolution": "1280x720"
+          },
+          "rgb_right": {
+            "description": "Folder containing RGB keyframe images from the right camera of the ZED stereo camera.",
+            "image_name_template": "{sequence_id}_{timestamp}.{file_type}",
+            "file_type": "png",
+            "resolution": "1280x720"
+          },
+          "depth": {
+            "description": "Folder containing keyframe depth maps corresponding to each RGB frame.",
+            "image_name_template": "{sequence_id}_{timestamp}.{file_type}",
+            "file_type": "png",
+            "resolution": "1280x720"
+          },
+          "video": {
+            "description": "MP4 video recording of the manipulation task from the ZED stereo camera.",
+            "file_type": "mp4",
+            "notes": "Provides continuous visual context of the task execution."
+          },
+          "info.json": {
+            "description": "Metadata file for the session, detailing task information and object interactions.",
+            "file_type": "json",
+            "fields": [
+              "task_name",
+              "task_description",
+              "object_used",
+              "duration",
+              "environment",
+              "annotations"
+            ]
+          },
+          "result.csv": {
+            "description": "CSV file containing time-synchronized motion data including hand position, camera pose, and world coordinates.",
+            "file_type": "csv",
+            "fields": [
+              "sequence_id",
+              "timestamp",
+              "hand_position_x",
+              "hand_position_y",
+              "hand_position_z",
+              "hand_rotation_x",
+              "hand_rotation_y",
+              "hand_rotation_z",
+              "hand_grasp_state",
+              "object_position_x",
+              "object_position_y",
+              "object_position_z",
+              "object_rotation_x",
+              "object_rotation_y",
+              "object_rotation_z",
+              "camera_position_x",
+              "camera_position_y",
+              "camera_position_z",
+              "camera_orientation_x",
+              "camera_orientation_y",
+              "camera_orientation_z",
+              "camera_orientation_w",
+              "world_position_x",
+              "world_position_y",
+              "world_position_z",
+              "world_orientation_x",
+              "world_orientation_y",
+              "world_orientation_z",
+              "world_orientation_w"
+            ]
+          },
+          "calibration.json": {
+            "description": "Camera calibration parameters for the ZED stereo camera, including intrinsic and extrinsic details.",
+            "file_type": "json",
+            "fields": [
+              "intrinsic_left",
+              "intrinsic_right",
+              "distortion_coefficients_left",
+              "distortion_coefficients_right",
+              "extrinsic_matrix"
+            ]
+          }
+        }
+      }
+    },
+    "acquisition_details": {
+      "camera": "ZED Stereo Camera",
+      "mounting": "Head-mounted",
+      "capture_date": "StartDate: 2025-02-15 | EndDate: TBD",
+      "environment": "Both indoor and outdoor environments"
+    },
+    "release_notes": {
+      "1.0.0": "Initial release with head-mounted ZED stereo camera recordings, including synchronized RGB, depth, video, and motion data."
+    }
+  }
+  

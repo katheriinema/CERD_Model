@@ -1,0 +1,25 @@
+{
+  "session_id": "taskname_02",
+  "task_name": "Task Name",
+  "task_description": "E.g. The subject picks up a small cube from the table and places it on a designated target area.",
+  "object_used": {
+    "name": "Small Cube",
+    "color": "Red"
+  },
+  "duration_sec": 12.5, 
+  "environment": {
+    "location": "Indoor lab",
+    "background": "Plain white table"
+  },
+  "camera_setup": {
+    "device": "ZED Stereo Camera",
+    "mounting_position": "Head-mounted",
+    "frame_rate": 30,
+    "resolution": "1280x720"
+  },
+  "subject": {
+    "subject_name": "Archer Lin",
+    "subject_id": "S001"
+  },
+  "notes": "The subject performed the task smoothly with no major disturbances."
+}
