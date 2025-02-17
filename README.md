@@ -1,8 +1,6 @@
 # CERD_Model
 Collect real world first-person perspective dataset designed for learning-based robotics manipulation at a low cost through computer vision model
 
-# Human POV Manipulation Dataset
-
 ## Overview
 The **Human POV Manipulation Dataset** is a first-person perspective dataset designed for learning-based robotics manipulation at a low cost of collecting real-world data. It is captured using a **head-mounted ZED stereo camera**, providing **RGB, depth, and motion data** that are synchronized for **robotics learning, imitation learning, and vision-based control**.
 
@@ -29,7 +27,7 @@ Each recorded session is stored in a dedicated subfolder containing separate fol
 ### File Structure
 ```
 📂 dataset/
- ├── 📂 YYYYMMDD_TaskName_SessionID/
+ ├── 📂 Task_Name_SessionID/
  │   ├── 📂 rgb_left/         # RGB images from the left camera (1280x720)
  │   ├── 📂 rgb_right/        # RGB images from the right camera (1280x720)
  │   ├── 📂 depth/            # Depth maps corresponding to RGB frames
