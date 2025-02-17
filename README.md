@@ -1,4 +1,4 @@
-# CERD_Model
+# CERD_Model (work in progress)
 Collect real world first-person perspective dataset designed for learning-based robotics manipulation at a low cost through computer vision model
 
 ## Overview
