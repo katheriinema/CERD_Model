@@ -1,52 +1,55 @@
 {
-    "camera_model": "ZED Stereo Camera",
-    "resolution": "1280x720",
-    "intrinsic_left": {
-      "fx": 700.0,
-      "fy": 700.0,
-      "cx": 640.0,
-      "cy": 360.0,
+  "camera_model": "Stereo Camera",
+  "resolution": "1280x720",
+  "intrinsic_left": {
+      "fx": 691.371,
+      "fy": 692.51,
+      "cx": 659.705,
+      "cy": 356.352,
       "intrinsic_matrix": [
-        [700.0, 0.0, 640.0],
-        [0.0, 700.0, 360.0],
-        [0.0, 0.0, 1.0]
+          [691.371, 0.0, 659.705],
+          [0.0, 692.51, 356.352],
+          [0.0, 0.0, 1.0]
       ]
-    },
-    "intrinsic_right": {
-      "fx": 700.0,
-      "fy": 700.0,
-      "cx": 640.0,
-      "cy": 360.0,
+  },
+  "intrinsic_right": {
+      "fx": 693.727,
+      "fy": 694.491,
+      "cx": 638.233,
+      "cy": 371.701,
       "intrinsic_matrix": [
-        [700.0, 0.0, 640.0],
-        [0.0, 700.0, 360.0],
-        [0.0, 0.0, 1.0]
+          [693.727, 0.0, 638.233],
+          [0.0, 694.491, 371.701],
+          [0.0, 0.0, 1.0]
       ]
-    },
-    "distortion_coefficients_left": {
-      "k1": -0.1,
-      "k2": 0.01,
-      "p1": 0.001,
-      "p2": -0.0005,
-      "k3": 0.0,
+  },
+  "distortion_coefficients_left": {
+      "k1": -0.1556383629653083,
+      "k2": 0.008202059759315403,
+      "p1": 0.0008812361164113766,
+      "p2": -0.00042996262675793585,
+      "k3": 0.0076251159893474495,
       "distortion_model": "plumb_bob"
-    },
-    "distortion_coefficients_right": {
-      "k1": -0.1,
-      "k2": 0.01,
-      "p1": 0.001,
-      "p2": -0.0005,
-      "k3": 0.0,
+  },
+  "distortion_coefficients_right": {
+      "k1": -0.16741348167864942,
+      "k2": 0.021872227242518964,
+      "p1": 0.0016243862938489636,
+      "p2": -0.0006871359299937981,
+      "k3": 0.0023693835318660066,
       "distortion_model": "plumb_bob"
-    },
-    "extrinsic_matrix": {
-      "rotation_matrix": [
-        [1.0, 0.0, 0.0],
-        [0.0, 1.0, 0.0],
-        [0.0, 0.0, 1.0]
-      ],
-      "translation_vector": [-0.06, 0.0, 0.0]
-    },
-    "notes": "Intrinsic parameters were obtained using ZED SDK calibration tools."
-  }
-  
+  },
+  "extrinsic_matrix": {
+      "baseline": 119.459,
+      "rotation_offsets": {
+          "CV": 0.00752814,
+          "RX": 0.00451101,
+          "RZ": -0.00150631
+      },
+      "translation_vector": [0.00876188, -0.197642]
+  },
+  "misc": {
+      "sensor_id": 0
+  },
+  "notes": "Intrinsic and extrinsic parameters for HD resolution."
+}

@@ -6,8 +6,8 @@ import pyzed.sl as sl
 import numpy as np
 
 # Input SVO file path and output dataset folder
-svo_file_path = r"C:\Users\arche\code\CERD_Model\data_test\SVO\pour_water_1.svo2"
-output_folder = r"C:\Users\arche\code\CERD_Model\dataset\pour_water_02"
+svo_file_path = "/home/kma/CERD_Model/saved_svos/c_pour_water_2.svo2"
+output_folder = "/home/kma/CERD_Model/dataset/pour_water_02"
 sequence_id = "pour_water_02"  # Modify as needed for your session naming
 
 def create_output_folders(base_folder):
